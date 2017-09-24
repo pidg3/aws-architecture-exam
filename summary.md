@@ -6,6 +6,8 @@ All the below is linked to Regions (geographic region) and Availability Zones (d
 
 ## Compute *
 
+Note Elastic Load Balancer sits under EC2.
+
 | Name  | Description | Example use case |
 | ------------- | ------------- | ------------- |
 | EC2 (Elastic Compute Cloud) | Virtual Linux or Windows machine. Can be used flexibly. Other services often use this under the hood e.g. Elastic Beanstalk. | Web application server capable of running server side code
@@ -89,7 +91,7 @@ Note EBS (Elastic Block Store) is very similar to EFS, but slightly less 'manage
 | Certificate Manager | Generates free SSL certificate for domains |
 | Directory Service | Connect Microsoft AD to AWS | I want to avoid managing users in two different locations |
 | Directory Shield |
-| WAF (Web Application Firewall) & Shield | Give application level protection (as opposed to network level protection) to an application | I want to guard against application level threats e.g. SQL injection |
+| WAF (Web Application Firewall) & Shield | Give application level protection (as opposed to network level protection) to an application | I want to guard against application level threats e.g. SQL injection - this would stop SQL injection even if I haven't updated my Wordpress security |
 | Artifact | Get security certifications for your AWS environment | I need to demonstrate PCI DSS compliance for my auditors |
 | Amazon Macie | Uses ML to discover, classify and protect sensitive data (currently S3 only) | I want to see where my security risks for PI information are |
 | CloudHSM | Managed hardware security model, manage encrption keys for secure environment | Protect private keys for an issuing Certification Authority |
